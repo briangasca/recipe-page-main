@@ -58,6 +58,7 @@
       background-color: hsl(330, 100%, 98%);
       width: 100%;
       padding-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     .prep-title {
@@ -71,7 +72,7 @@
     }
 
     .bold-text-middle {
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .time-list {
@@ -93,6 +94,7 @@
 
     .ingredient-list {
       font-weight: 200;
+      text-indent: 15px;
     }
     
     .instructions-container{
@@ -109,15 +111,25 @@
     }
 
     .instructions-list {
-      font-weight: 400;
-      text-indent: 20px;    
+      font-weight: 800;
+      padding-left: 20px;
+
+    }
+
+    .instructions-span{
+      font-weight: 300;
+      color: hsl(24, 5%, 18%);
     }
 
     .nutrition-title{
       color: hsl(14, 45%, 36%); 
       padding-top: 10px;
+      padding-bottom: 10px;
       font-size: 25px;
-      font-weight: 550;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+
     }
 
     .hr {
@@ -125,8 +137,21 @@
     }
 
     tr, td {
-      border-bottom: 2px solid black;
+      border-bottom: 1px solid hsl(11, 1%, 88%);
+      padding-left: 30px;
+      padding-bottom: 5px;
+      padding-top: 5px;
     }
+
+    td {
+      padding-right: 250px;
+    }
+
+    .td-bold {
+      color: hsl(14, 45%, 36%);
+      font-weight: 600;
+    }
+
   </style>
 </head>
 <body>
@@ -164,15 +189,15 @@
     <div class="instructions-container">
       <div class="instructions-title">Instructions</div>
       <ol class="instructions-list">
-        <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-          <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-          <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-            the eggs evenly coat the surface.</li>
-          <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-            middle, sprinkle your chosen fillings over one half of the omelette.</li>
-          <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-            fillings. Let it cook for another minute, then slide it onto a plate.</li>
-          <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+        <li><span class="instructions-span"><span class="bold-text-middle">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture</span></li>
+          <li><span class="instructions-span"><span class="bold-text-middle">Heat the pan: </span>Place a non-stick frying pan over medium heat and add butter or oil.</span></li>
+          <li><span class="instructions-span"><span class="bold-text-middle">Cook the omelette: </span>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</span></li>
+          <li><span class="instructions-span"><span class="bold-text-middle">Add fillings (optional): </span>When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</span></li>
+          <li><span class="instructions-span"><span class="bold-text-middle">Fold and serve: </span>As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.</span></li>
+          <li><span class="instructions-span"><span class="bold-text-middle">Enjoy: </span>Serve hot, with additional salt and pepper if needed.</span></li>
       </ol>
     </div>
 
@@ -188,19 +213,19 @@
         </tr>
         <tr>
           <td>Calories</td>
-          <td>277kcal</td>
+          <td><span class="td-bold">277kcal</span></td>
         </tr>
         <tr>
           <td>Carbs</td>
-          <td>0g</td>
+          <td><span class="td-bold">0g</span></td>
         </tr>
         <tr>
           <td>Protein</td>
-          <td>20g</td>
+          <td><span class="td-bold">20g</span></td>
         </tr>
         <tr>
           <td>Fat</td>
-          <td>22g</td>
+          <td><span class="td-bold">22g</span></td>
         </tr>
       </table>
     </div>
